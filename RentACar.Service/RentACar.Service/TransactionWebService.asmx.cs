@@ -18,7 +18,7 @@ namespace RentACar.Service
     // [System.Web.Script.Services.ScriptService]
     public class TransactionWebService : System.Web.Services.WebService
     {
-        /*
+        
         [WebMethod]
         public Transactions InsertTransaction(Transactions entity)
         {
@@ -148,7 +148,7 @@ namespace RentACar.Service
             {
                 using (var business = new TransactionManager())
                 {
-                    return business.Rent(car, cust);
+                    return business.GiveBack(car, cust);
                 }
             }
             catch (Exception)
@@ -156,7 +156,7 @@ namespace RentACar.Service
                 throw;
             }
         }
-        */
+        
 
     }
 }
